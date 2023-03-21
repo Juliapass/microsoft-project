@@ -5,12 +5,12 @@ let measurementsOne = "chest";
 let measurementsTwo = "measure around your hip bone";
 let measurementsThree = "measure around your seat";
 
-let dressLength = "knee-length";
-let dressSleeveLength = "short sleeves";
+let dressLength = [kneelength, heelsLength, averageLength, shortLength];
+let dressSleeveLength = [shortSleeves, mediumSleeves, longSleeves];
 
-let dressFabric = "cotton";
-let dressFashion = "streight cut";
+let dressFabric = [cotton, viscose, silk, tencelLyocell, elastane];
+let dressFashion = [streightCut, freeCut, taperedCut];
 
-let dressSize = "xs, s, m, l, xl, xxl";
-let dressSizeWomen = "34, 36, 38, 40, 42, 44, 48";
-let dressSiZeMen = "44, 46, 48, 50, 52, 54";
+const dressSize = [xs, s, m, l, xl, xxl];
+const dressSizeWomen = [34, 36, 38, 40, 42, 44, 48];
+const dressSiZeMen = [44, 46, 48, 50, 52, 54];
