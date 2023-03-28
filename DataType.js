@@ -1,4 +1,3 @@
-
 // function with a parameter called name
 function displayGreeting(name) {
   // creating a new local variable that inserts the name into a string
@@ -13,7 +12,7 @@ let measurementsHipBone = "measure around your hip bone";
 let measurementsSeat = "measure around your seat";
 
 function addMeasurementChest(value) {
-  measurementsChest +=` : ${value} inches`;
+  measurementsChest += ` : ${value} inches`;
 }
 
 function addMeasurementHipBone(value) {
@@ -22,7 +21,7 @@ function addMeasurementHipBone(value) {
 
 function addMeasurementSeat(value) {
   measurementsSeat += `: ${value} inches`;
-} 
+}
 
 addMeasurementChest(36); // adds measurement value of 36 inches to measurementsChest variable
 addMeasurementHipBone(42); // adds measurement value of 42 inches to measurementsHipBone variable
@@ -32,7 +31,12 @@ console.log(measurementsChest); // Output: "measure around your chest: 36 inches
 console.log(measurementsHipBone); // Output: "measure around your hip bone: 42 inches"
 console.log(measurementsSeat); // Output: "measure around your seat: 38 inches"
 
-let dressLength = ["knee Length", "heels Length", "average Length", "short Length"];
+let dressLength = [
+  "knee Length",
+  "heels Length",
+  "average Length",
+  "short Length",
+];
 let dressSleeveLength = ["Short Sleeves", "Medium Sleeves", "Long Sleeves"];
 let dressFabric = ["cotton", "viscose", "silk", "tencel Lyocell", "elastane"];
 let dressFashion = ["streight Cut", "free Cut", "tapered Cut"];
@@ -106,7 +110,6 @@ chooseSizeUniverse("m"); // Output: "You have chosen the dress size: m"
 chooseSizeWomen(38); // Output: "You have chosen the women's dress size: 38"
 chooseSizeMen(50); // Output: "You have chosen the men's dress size: 50"
 
-
 function recommendDressLength(height) {
   if (height < 160) {
     return dressLength[3]; // shortLength
@@ -137,7 +140,8 @@ function addMeasurment(type, size) {
   console.log(`The Measurement Around Your is ${type}: ${size} inches`);
 }
 
-
 addMeasurment(seat.type, seat.size);
 addMeasurment(hip.type, hip.size);
 addMeasurment(chest.type, chest.size);
+
+console.log(hip.type);
