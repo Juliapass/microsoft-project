@@ -144,4 +144,4 @@ addMeasurment(seat.type, seat.size);
 addMeasurment(hip.type, hip.size);
 addMeasurment(chest.type, chest.size);
 
-console.log(hip.type);
+
