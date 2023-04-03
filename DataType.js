@@ -1,4 +1,4 @@
-// function with a parameter called name
+// function with a parameter called name11
 function displayGreeting(name) {
   // creating a new local variable that inserts the name into a string
   const message = `Hello, ${name} , welcome to our TryOnStore!`;
@@ -85,6 +85,12 @@ function chooseSize(size) {
   }
 }
 
+if (dressSizeUniverse.indexOf("s") !== -1) {
+  console.log("Size 's' is available.");
+} else {
+  console.log("Size 's' is not available.");
+}
+
 function chooseSizeWomen(size) {
   if (dressSizeWomen.includes(size)) {
     console.log(`You have chosen the women's dress size: ${size}`);
@@ -100,7 +106,11 @@ function chooseSizeMen(size) {
     console.log("Please choose a valid men's dress size.");
   }
 }
-
+// check the size between comparison operator
+const size = 42;
+const sizeMessage =
+  size > 40 ? "You need a large size." : "You need a medium size.";
+console.log(sizeMessage);
 // Example usage
 chooseLength("kneeLength"); // Output: "You have chosen the dress length: kneeLength"
 chooseSleeveLength("shortSleeves"); // Output: "You have chosen the dress sleeve length: shortSleeves"
